@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+
+<head>   <link rel="stylesheet" href="./app1.css"/></head>
+
+<body>
+        
+        <navigation ></navigation><br/>
+      
+      <!--   <nav >
+                <ul >
+                       
+            
+                <li><a href="#/home">Home</a></li>
+                <li><a href="#/message">Message</a></li>
+                <li><a href="#/logout">Logout</a></li>
+                
+                </ul>
+                </nav> -->
+                 
+<h1>Messages</h1>
+<div ng-controller="messageController">
+
+        
+    <table border="2">
+        <tr>
+            <th>Message</th>
+            
+        </tr>
+        <tr ng-repeat="message in messages  track by $index ">
+            <td>{{"Sender: "+message.Sender}}</td>
+                <td> <a href="#Message/{{$index}}">
+                {{message.message}}</a></td>
+                  <td> <button class="imp" ng-attr-id="{{$index}}"  ng-click="markAsImportant($index)">{{message.markAsImp?'Important':'Mark As Important'}} </button>  </td> 
+          
+           
+    
+        </tr>
+       
+    
+    </table>
+</div>
+</body>
+</html>
