@@ -1,0 +1,48 @@
+body
+{
+    background-color:#D5D2D2;
+    margin-left:15%;
+    margin-right:15%;
+}
+#marlabs
+{
+    height:"120";
+     width:20%
+}
+nav{
+    background-color: gray;
+    height: 40px;
+   
+    
+
+}
+nav ul{
+    list-style-type: none;
+    height: 40px;
+    margin: 0%;
+    padding: 0 0 0 40px;
+
+}
+nav ul li{
+    float: left;
+    height: 40px;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: orange
+}
+
+.container
+{
+   display: flex;
+   height:100%;
+  flex-wrap: wrap;
+}
+
+
