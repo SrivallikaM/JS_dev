@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>   <link rel="stylesheet" href="./app1.css"/></head>
+
+<body>
+
+        <navigation ></navigation>
+     <!--    <navigation name = "Message"></navigation> 
+        <navigation name = "logout"></navigation> --> 
+       <!--  <nav >
+                <ul >
+                       
+            
+                <li><a href="#/home">Home</a></li>
+                <li><a href="#/message">Message</a></li>
+                <li><a href="#/logout">Logout</a></li>
+                
+                </ul>
+                </nav> -->
+            
+<h1>Message Detail Page</h1>
+<div ng-controller="messageDetailController">
+    <div>
+        Details of the message
+     
+    </div>
+    <table border="2">  
+        <tr>
+                <td> {{'Sender is: '+ message.Sender}}</td>
+            <td> {{'Message is: '+ message.message}}</td>
+            <td><button class="imp_msg"  ng-click="markAsImp()">{{message.markAsImp?'Important':'Mark As Important'}}</button></td>
+            <td><a href="#/reply/{{message.Sender}}">Reply To Message</a></td>
+            <td><input type="button" ng-click="delete()" value="Delete Message"></input></td>
+        </tr>
+       
+
+    </table>
+</div>
+</body>
+</html>
