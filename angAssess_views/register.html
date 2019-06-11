@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>   <link rel="stylesheet" href="./app1.css"/></head>
+<body>
+
+<div ng-controller="registerController">
+
+        <navigation></navigation>
+        <br/><br/>
+
+            <div id="user_div">
+                    <input type="text" id="uname" placeholder="Username" required ng-model="username"></input>
+                    <span style="color: darkred;">*Important</span>
+            </div>
+            <br />
+            <br />
+            <div id="pwd_div">
+                    <input type="text" id="pwd" placeholder="Password" required ng-model="password"></input>
+                    <span style="color: darkred;">*Important</span>
+            </div>
+
+            <br /><br />
+            <div id="fn_div">
+                    <input type="text" id="firstName" placeholder="First Name"></input>
+            </div>
+
+            <br /><br />
+            <div id="ln_div">
+                    <input type="text" id="lastName" placeholder="Last Name"></input>
+            </div>
+            <br /><br />
+            <div id="phone_div"><input type="text" id="phone" placeholder="Phone"></input></div>
+
+
+
+            <br /><br />
+            <div id="gender_div">
+                    <p>Gender</p>
+                    <input type="radio" id="btnMale" name="gender_value" value="Male">Male</input>
+                    <input type="radio" id="btnFemale" name="gender_value" value="Female">Female</input>
+            </div>
+
+            <br /><br />
+            <input type="button" id="sub" value="Register" ng-click="register()"></input>
+        </div>
+        </body>
+        </html>
